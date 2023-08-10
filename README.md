@@ -1,10 +1,16 @@
 # Die Package
 
 ### Metadata
+
 **Author:** Kristian Olsson
+
 **Last Updated:** August 10, 2023
+
 **Version:** 1.0
+
 **Purpose:** This package was built for my DS 5100 project. This package imitates an n-sided die, plays games with dice (or die), and analyzes the results of this game. 
+
+
 
 ### Synopsis
 This library provides three classes for playing and analyzing dice-based games:
