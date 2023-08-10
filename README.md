@@ -13,14 +13,33 @@
 
 
 ### Synopsis
+
+This package can be installed using:
+```python
+pip install -e ...
+```
+
+They can call the classes using:
+```python
+from montecarlo import Die, Game, Analyzer
+```
+
 This library provides three classes for playing and analyzing dice-based games:
 
-**Die:** Represents an n-sided die and provides methods for rolling the die, changing weights of faces, and retrieving the current state of the die. This class can be initiated using die = Die(np.array([1,2,3])), for example.
+**Die:** Represents an n-sided die and provides methods for rolling the die, changing weights of faces, and retrieving the current state of the die. This class can be instantiated using, for example:
+```python
+die = Die(np.array([1,2,3]))
+```
 
-**Game:** Creates a game by rolling one or more dice (Die objects) multiple times and keeps track of the results. This class can be initiated using game = Game([die, die, die]), for example.
+**Game:** Creates a game by rolling one or more dice (Die objects) multiple times and keeps track of the results. This class can be instantiated using, for example:
+```python
+game = Game([die, die, die])
+```
 
-**Analyzer:** Takes the results of a game (Game object) and computes various descriptive statistical properties about it, such as the number of jackpots, face counts, distinct combinations, and permutations. This class can be initiated using analyzer = Analyzer(game), for example.
-
+**Analyzer:** Takes the results of a game (Game object) and computes various descriptive statistical properties about it, such as the number of jackpots, face counts, distinct combinations, and permutations. This class can be instantiated using, for example:
+```python
+analyzer = Analyzer(game)
+```
 
 ### API
 
