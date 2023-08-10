@@ -41,7 +41,6 @@ class Die:
                 new_weight = float(new_weight)
             except ValueError:
                 raise TypeError("The input weight value is not numeric.")
-
         self.dieweights.loc[face, 'weights'] = new_weight
 
     def roll(self, rolls=1):
