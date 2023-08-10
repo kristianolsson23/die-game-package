@@ -10,7 +10,6 @@ class MonteCarloTestSuite(unittest.TestCase):
         # test initializer type
         self.mydiefaces = np.array([1,2,3,4,5,6])
         self.mydie1 = Die(self.mydiefaces)
-        #self.assertEqual(type(self.mydie1), montecarlo.Die)
         self.assertTrue(isinstance(self.mydie1, montecarlo.Die))
 
     def test_2_die_get_state(self): 
@@ -44,8 +43,7 @@ class MonteCarloTestSuite(unittest.TestCase):
         self.mydie5.roll(5)
         self.mygame5 = Game([self.mydie5,self.mydie5])
         self.assertTrue(isinstance(self.mygame5, montecarlo.Game))
-        #self.assertEqual(type(self.mygame5), montecarlo.Game)
-
+        
     def test_6_game_play(self):
         # test size of results of game play
         self.mydiefaces = np.array([1,2,3,4,5,6])
@@ -75,7 +73,6 @@ class MonteCarloTestSuite(unittest.TestCase):
         self.mygame8.play(10)
         self.myanalyzer8 = Analyzer(self.mygame8)
         self.assertTrue(isinstance(self.myanalyzer8, montecarlo.Analyzer))
-        #self.assertEqual(type(self.myanalyzer8), montecarlo.Analyzer)
 
     def test_9_analyzer_jackpot(self):
         # test jackpot count
